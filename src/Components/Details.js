@@ -43,7 +43,7 @@ class Details extends React.Component {
 
         axios({
             method: 'GET',
-            url: `https://tranquil-spire-37311.herokuapp.com/restaurant/${restaurant}`,
+            url: `https://gentle-brushlands-53587.herokuapp.com/restaurant/${restaurant}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -55,7 +55,7 @@ class Details extends React.Component {
     handleOrder = (resId) => {
         axios({
             method: 'GET',
-            url: `https://tranquil-spire-37311.herokuapp.com/menuitems/${resId}`,
+            url: `https://gentle-brushlands-53587.herokuapp.com/menuitems/${resId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -131,7 +131,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(`https://tranquil-spire-37311.herokuapp.com/payment`, {
+        return fetch(`https://gentle-brushlands-53587.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",

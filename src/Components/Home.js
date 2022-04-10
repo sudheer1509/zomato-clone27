@@ -18,7 +18,7 @@ class Home extends React.Component {
         sessionStorage.clear();
         axios({
             method: 'GET',
-            url: 'https://tranquil-spire-37311.herokuapp.com/locations',
+            url: 'https://gentle-brushlands-53587.herokuapp.com/locations',
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -28,7 +28,7 @@ class Home extends React.Component {
 
         axios({
             method: 'GET',
-            url: 'https://tranquil-spire-37311.herokuapp.com/mealtypes',
+            url: 'https://gentle-brushlands-53587.herokuapp.com/mealtypes',
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
